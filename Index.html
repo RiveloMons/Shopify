@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniFan Store</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 14s linear infinite;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Barra infinita -->
+  <div class="bg-black text-white py-3 overflow-hidden whitespace-nowrap">
+    <div class="marquee text-sm font-semibold">
+      ❄️ ENVÍO GRATIS ❄️ MINI VENTILADOR PREMIUM ❄️ OFERTA LIMITADA ❄️
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="flex flex-col items-center justify-center text-center px-6 py-24 bg-gradient-to-b from-white to-blue-50">
+
+    <span class="bg-blue-100 text-blue-700 px-5 py-2 rounded-full text-sm mb-6">
+      Nuevo verano 2026
+    </span>
+
+    <h1 class="text-5xl md:text-7xl font-bold max-w-5xl leading-tight">
+      Mantén el frescor donde quieras ❄️
+    </h1>
+
+    <p class="mt-6 text-lg text-gray-600 max-w-2xl">
+      Mini ventilador portátil USB. Potente, silencioso y perfecto para casa, oficina o viajes.
+    </p>
+
+    <div class="flex gap-4 mt-10">
+
+      <button class="bg-black text-white px-8 py-4 rounded-full hover:scale-105 transition">
+        Comprar ahora
+      </button>
+
+      <button class="border border-black px-8 py-4 rounded-full hover:bg-black hover:text-white transition">
+        Ver más
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- Beneficios -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-20">
+
+    <div class="border p-8 rounded-3xl hover:shadow-2xl transition">
+      <div class="text-4xl mb-4">🔋</div>
+
+      <h3 class="text-2xl font-bold mb-3">
+        USB Recargable
+      </h3>
+
+      <p class="text-gray-600">
+        Carga rápida y portátil.
+      </p>
+    </div>
+
+    <div class="border p-8 rounded-3xl hover:shadow-2xl transition">
+      <div class="text-4xl mb-4">🤫</div>
+
+      <h3 class="text-2xl font-bold mb-3">
+        Silencioso
+      </h3>
+
+      <p class="text-gray-600">
+        Diseñado para máxima comodidad.
+      </p>
+    </div>
+
+    <div class="border p-8 rounded-3xl hover:shadow-2xl transition">
+      <div class="text-4xl mb-4">❄️</div>
+
+      <h3 class="text-2xl font-bold mb-3">
+        Gran Potencia
+      </h3>
+
+      <p class="text-gray-600">
+        Pequeño pero potente.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Opiniones -->
+  <section class="bg-gray-50 py-24 px-8">
+
+    <h2 class="text-4xl font-bold text-center mb-16">
+      Opiniones ⭐
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-8 rounded-3xl shadow">
+        “Muy premium y súper útil.”
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl shadow">
+        “Perfecto para verano.”
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl shadow">
+        “La batería dura bastante.”
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-24 px-8 max-w-4xl mx-auto">
+
+    <h2 class="text-4xl font-bold text-center mb-12">
+      FAQ
+    </h2>
+
+    <div class="space-y-6">
+
+      <div class="border rounded-2xl p-6">
+
+        <h3 class="font-bold text-xl mb-2">
+          ¿Cuánto dura la batería?
+        </h3>
+
+        <p class="text-gray-600">
+          Entre 4 y 8 horas.
+        </p>
+
+      </div>
+
+      <div class="border rounded-2xl p-6">
+
+        <h3 class="font-bold text-xl mb-2">
+          ¿Hace ruido?
+        </h3>
+
+        <p class="text-gray-600">
+          No, es silencioso.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-10 text-center">
+    © 2026 MiniFan Store
+  </footer>
+
+</body>
+</html>
